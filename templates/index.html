@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{{ f_name }} Resume</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/favicon.ico') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">{{ f_name }}</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ url_for('static', filename='assets/img/profile.jpeg') }}" alt="{{ full_name }} profile picture" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <div>
+                    <h1 class="mb-0">
+                        {{ f_name.split(' ')[0] }}
+                        <span class="text-primary">{{ f_name.split(' ')[1] }}</span>
+                    </h1>
+                </div>
+                    <div class="subheading mb-5">
+                        Bridging the Gap between Data and Business - <span class="text-primary"> Lifelong Learner</span>
+                    </div>
+                    <ul>
+                        <li>
+                        <p class="lead">A Certified Qlik Sense/QlikView Data Architect with {{ years_of_experience }} years of experience in building data models, creating complex SQL queries, utilizing innovative data visualization techniques and complex scripting functions.
+                        </li>
+                        <li>
+                            <p class="lead mb-5">A master’s degree in management with a strong background in data analysis and knowledge in 4 coding languages: SQL, HTML, CSS, and Python.</p>
+                        </li>
+                    </ul>
+                    <div class="social-icons">
+                        <a class="social-icon" href="#!"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="social-icon" href="#!"><i class="fa-brands fa-github"></i></a>                
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Professional Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Data Analyst</h3>
+                            <div class="subheading mb-3">Qlik</div>
+                            <ul>
+                            <li>Developed reports by integrating data from multiple sources.</li>
+                            <li>Built strong relationships with business stakeholders to create effective dashboards for
+                                the Customer Support Organization involving Support, Renewals, and Finance data.</li>
+                            <li>Created data pipelines by using Dbt, Qlik Sense, and Snowflake data assets based
+                                on business requirements.</li>
+                            <li>Cross-functional collaboration with the Finance, CSO, and R&D Departments to
+                                unveil valuable business insights from the organization database, and presented the
+                                results to the C-suite.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2021 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Operation Research Analyst</h3>
+                            <div class="subheading mb-3">Pride Plumbing Services</div>
+                            <ul>
+                                <li>Developed and maintained 90+ Qlik Sense apps and 30+ reports aimed to update the business intelligence infrastructure to queried company's data faster</li>
+                                <li>Modernized the process to show 10,000+ plumbing parts to the customers and
+                                    technicians with a Qlik Sense mobile application.</li>
+                                <li>Built an automated system to send out targeted direct mails and email notifications
+                                    to 12,000+ customers.</li>
+                                <li>Constructed an algorithm to determine the employee’s achievements.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jun 2017 - Mar 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">QlikView Developer</h3>
+                            <div class="subheading mb-3">Engineering</div>
+                            <ul>
+                            <li>Integrated a statistical model to avoid inaccuracy in the auto assembly line</li>
+                            <li>Enhanced the data model structure to reduce the data-loading time frame.</li>
+                            <li>Instructed 20+ end-users to understand the developed QlikView applications better.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jun 2016 - Apr 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">QlikView Developer</h3>
+                            <div class="subheading mb-3">Reply</div>
+                            <ul>
+                            <li>Built dashboards to maximize a 5 billion Euro stock portfolio</li>
+                            <li>Managed ETL processes with various data layers to load data into a dashboard.</li>
+                            <li>Implemented best practices in data modeling with QlikView.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Nov 2015 - May 2016</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">IT Consultant</h3>
+                            <div class="subheading mb-3">PricewaterhouseCoopers</div>
+                            <ul>
+                            <li>Developed VBA macros for data validation that improved the data entry efficiency.</li>
+                            <li>Coordinated the installation of the Office suite, including MS Word and MS Excel.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2015 - Oct 2015</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Business Intelligence Analyst</h3>
+                            <div class="subheading mb-3">Self-Employed</div>
+                            <p>Developed applications using Microsoft SQL Server, MySql, ElevateDb, and QlikView</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jan 2014 - May 2015</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Università Tor Vergata, Rome</h3>
+                            <div class="subheading mb-3">Master’s Degree</div>
+                            <div>Economics & Management</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2013</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Università di Palermo, Palermo</h3>
+                            <div class="subheading mb-3">Bachelor’s Degree</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2010</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fa-brands fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-q"></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-server"></i></li>
+                        <li class="list-inline-item"><i class="fa-solid fa-snowflake"></i></li>
+                        <li class="list-inline-item"><img src="{{ url_for('static', filename='assets/img/dbt-logo.png') }}"/></span>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Business Intelligence
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Data Analysis
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Data Visualization
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Qlik Sense
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Dbt
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            ETL
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Microsoft SQL Server
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Snowflake
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Python
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Besides loving everything that is data, I enjoy exploring new cities and their culture. I love traveling to new places. I also go hiking and love spending time with family and friends.</p>
+                    <p class="mb-0">When I take a break, I make some dough and cook pizzas. My second dream is to open a pizza shop.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Microsoft SQL Server Certified Professional
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Certified QlikView Data Architect/Busines Analyst
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Certified Qlik Sense Data Architect/Business Analyst
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>   
+         <div id="progress-bar"></div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        }
+        </script>
+    </body>
+</html>
