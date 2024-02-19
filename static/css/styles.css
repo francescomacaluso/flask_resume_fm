@@ -10969,8 +10969,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -10982,6 +10982,22 @@ section.resume-section .resume-section-content {
     min-height: 100vh;
   }
 }
+
+#mobile-image {
+  display: none;
+}
+
+@media screen and (max-width: 912px) {
+  #mobile-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 10rem;
+      max-height: 10rem;
+      border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+}
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
@@ -10990,3 +11006,4 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
