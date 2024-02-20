@@ -9,7 +9,7 @@ def index():
     start_date = datetime(year=2014, month=1, day=1)
     today = datetime.today()
     years_of_experience = today.year - start_date.year
-    full_name = 'Francesco'
+    full_name = 'Francesco Macaluso'
     date_timestamp = datetime.now()
 
     return render_template('index.html',f_name=full_name,years_of_experience=years_of_experience)
