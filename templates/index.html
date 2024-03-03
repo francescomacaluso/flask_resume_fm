@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -55,13 +57,17 @@
                         <p class="lead">A Certified Qlik Sense/QlikView <b>Data Architect</b> with {{ years_of_experience }} years of experience in <b>building data models</b>, <b>creating complex SQL queries</b>, utilizing innovative <b>data visualization</b> techniques and complex scripting functions.
                         </li>
                         <li>
-                            <p class="lead mb-5">A <b>master</b>&#39;s degree in management</b> with a strong background in <b>data analysis</b> and knowledge in 4 coding languages: <b>SQL, HTML, CSS, and Python</b>.</p>
+                            <p class="lead">A <b>master</b>&#39;s degree in management</b> with a strong background in <b>data analysis</b> and knowledge in 4 coding languages: <b>SQL, HTML, CSS, and Python</b>.</p>
+                        </li>
+                        <li>
+                            <p class="lead mb-5">Check my <a href="https://www.linkedin.com/in/francescomacaluso/"><b>LinkedIn</b></a> profile, my <a href="https://github.com/francescomacaluso"><b>GitHub</b></a> repo or <a class="social-icon" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/francescomacaluso/30min'});return false;"><b>schedule</b></a> a meeting with me!</p>
                         </li>
                     </ul>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/francescomacaluso/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a class="social-icon" href="https://github.com/francescomacaluso" target="_blank"><i class="fa-brands fa-github"></i></a>                
-                            </ul>
+                        <a class="social-icon" href="https://www.linkedin.com/in/francescomacaluso/" target="_blank" alt="Check my LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="social-icon" href="https://github.com/francescomacaluso" target="_blank" alt="Check my GitHub repo"><i class="fa-brands fa-github"></i></a>    
+                        <a class="social-icon" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/francescomacaluso/30min'});return false;"><i class="fa-solid fa-handshake"></i></a>
+                    </ul>
                         </div>
                     </section>
                     <hr class="m-0" />
@@ -73,7 +79,7 @@
                             <ul>
                                 <li>
                                 I am currently employed as a <b>Senior Data Analyst</b> at Qlik. Primary responsibilities include developing dashboards and reports using Business Intelligence tools such as <b>Qlik Sense</b>, <b>QlikView</b>, and <b>NPrinting</b>, as <b>Python</b> libraries such as Pandas, Flask, and Microsoft Excel. 
-                                From start to finish, I manage to extract, transform, and load data from multiple sources to create data stories.
+                                From start to finish, I manage the extraction, transformation, and loading of data from multiple sources to create data stories.
                                 </li>
                                 <li>
                                     <b>Collaboration</b> is one of the essential skills I developed: <b>keeping in touch and updating stakeholders on my daily job is very important for a successful project</b>.
@@ -95,7 +101,11 @@
                                 <li>
                                     Additional experiences include working at a financial institution, an accounting firm, and a healthcare association. These experiences furthered my understanding of corporate and global business dynamics.
                                 </li>
-                                <li><b>Please get in touch with me and schedule a call</b> so I can show you my portfolio.</li>
+                                <li>Thanks for visiting my website, please get in touch with me and <!-- Calendly link widget begin -->
+                                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/francescomacaluso/30min'});return false;"><b></b>schedule a call on Calendly</b></a>
+                                    <!-- Calendly link widget end --> so I can show you my portfolio.</li>
                                 <li>I am excited to connect with companies to provide mutually beneficial opportunities.</li>
                             </p>
                             </ul>
@@ -257,7 +267,7 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Dbt
+                            Dbt - Data build tool
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -292,7 +302,7 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>Besides loving everything that is data, I enjoy exploring new cities and their culture. I love traveling to new places. I also go hiking and love spending time with family and friends.</p>
-                    <p class="mb-0">When I take a break, I make some dough and cook pizzas. My second dream is to open a pizza shop.</p>
+                    <p class="mb-0">When I take a break, I make some dough and cook pizza. My second dream is to open a pizza shop.</p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -316,8 +326,14 @@
                     </ul>
                 </div>
             </section>
-        </div>   
-         <div id="progress-bar"></div>
+        </div> 
+        <hr class="m-0" />
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <iframe width="768" height="768" src="https://miro.com/app/live-embed/uXjVMQSw1FA=/?moveToViewport=1474,-264,1435,2775&embedId=791635791408" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>ç        </div>
+        </section> 
+        <div id="progress-bar"></div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
